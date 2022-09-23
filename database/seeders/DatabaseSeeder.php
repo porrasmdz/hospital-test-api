@@ -14,19 +14,21 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        \App\Models\User::factory(10)->create();
-        \App\Models\Patient::factory(100)->create();
-        \App\Models\History::factory(50)->create();
-
-        \App\Models\Citation::factory(20)->create();
-        // \App\Models\User::factory(10)->create();
 
          \App\Models\User::factory()->create([
-             'name' => 'Test User',
-             'email' => 'test@example.com',
+            'id'=>1,
+             'name' => 'Garcia',
+             'email' => 'mail@example.com',
              'hospital'=>'Kennedy Norte',
              'hospital_address'=>'La puntilla',
-             'password'=>bcrypt('password') //password
+             'password'=>bcrypt('password123') //password123
          ]);
+
+         \App\Models\Patient::factory(20)->create();
+         \App\Models\History::factory(10)->create();
+
+         \App\Models\Citation::factory(20)->create();
+         // \App\Models\User::factory(10)->create();
+
     }
 }

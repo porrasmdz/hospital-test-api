@@ -19,7 +19,7 @@ class CitationFactory extends Factory
         return [
             'citation' => fake()->date(),
             'time'=> fake()->time(),
-            'patient_id'=> 2,
+            'patient_id'=>rand(1,8),
         ];
     }
 }

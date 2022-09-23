@@ -31,7 +31,7 @@ class HistoryFactory extends Factory
             'sexuality'=>fake()->sentence(),
             'workout'=>fake()->sentence(),
             'allergies'=>fake()->sentence(),
-            'patient_id' => 2,
+            'patient_id' => rand(1,8),
 
         ];
     }

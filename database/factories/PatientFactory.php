@@ -31,7 +31,7 @@ class PatientFactory extends Factory
             'address'=>fake()->address(),
             'education_grade'=>fake()->randomElement(['primary', 'college', 'university']),
             'city_id'=>fake()->randomNumber(9),
-            'user_id'=>2,
+            'user_id'=>1,
             'email' => fake()->unique()->safeEmail(),
 
 
